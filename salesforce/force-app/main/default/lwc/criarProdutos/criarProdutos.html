@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  title="Criar Produto">
+        <lightning-input name="nomeProduto" type="text" label="Nome do produto" onchange={handleChange}></lightning-input>
+        <lightning-input name="codigoProduto" type="text" label="Código do produto" onchange={handleChange}></lightning-input>
+        <lightning-input name="descricaoProduto" type="text" label="Descrição do produto" onchange={handleChange}></lightning-input>
+        <lightning-input name="precoProduto" type="number" label="Preço produto" formatter="currency" step=".01" onchange={handleChange}></lightning-input>
+    
+        <lightning-button variant="brand" label="Submit"  onclick={submitForm}></lightning-button>
+    </lightning-card>
+</template>
